@@ -7,9 +7,9 @@ Ta có ví dụ: Fi(2) = Fi(0) + Fi(1) = 1+1 = 2, Fi(3) =Fi(2) + Fi(1) = 2+1 = 3
 let n = prompt('Nhap n: ');
 
 const checkFibo = (n) => {
-    if(n == 0 || n ==1){
+    if (n == 0 || n == 1) {
         return 1;
     }
-    return checkFibo(n-1) + checkFibo(n-2);
+    return checkFibo(n - 1) + checkFibo(n - 2);
 }
 console.log(checkFibo(n))

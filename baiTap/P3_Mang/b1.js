@@ -20,7 +20,7 @@ let arr = 0;
 
 for (i = 0; i < ip; i++) {
     n[i] = prompt('Nhập phan tu thứ: ');
-    arr+=+n[i]; // thêm dấu + ở +n[i] là convert kiểu string sang number. Vì khi debug thấy code nhận n[i] là chuỗi.
+    arr+=Number(n[i]); 
 }
 arr = arr/ip;
 console.log(arr);
