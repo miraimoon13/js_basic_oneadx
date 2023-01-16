@@ -5,6 +5,11 @@ Yêu cầu về chuỗi là: Có độ dài không quá 20 ký tự, không đư
 let chuoi = prompt('Nhập vào chuỗi: ');
 console.log(`Chuỗi vừa nhập là: ${chuoi}`);
 
-let check = false;
 
-let regex = /\S*[A-Z]*\d{1}/;
+let regex = /^[A-Z][^\s]{0,18}\d$/;
+
+if(chuoi.match(regex)) {
+    console.log('Duyệt!');
+}else{
+    console.log('Không duyệt');
+}

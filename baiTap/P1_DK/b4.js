@@ -6,8 +6,8 @@ Sau đó kiểm tra xem mã số này có đúng với định dạng đã cho h
 let msv = prompt('Nhập vào mã sinh viên: ');
 
 const regex = /.B*\d{7}.*/;
-if(msv.match(regex) && msv.length == 8){
+if (msv.match(regex) && msv.length == 8) {
     console.log('Đúng');
-}else{
+} else {
     console.log('KHông Đúng');
 }
