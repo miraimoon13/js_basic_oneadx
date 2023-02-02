@@ -7,19 +7,27 @@ let chuoi = prompt('Nhập vào 1 chuỗi: ');
 console.log(`Chuỗi vừa nhập là: ${chuoi}`);
 
 let kiTu = prompt('Nhập vào ký tự tìm kiếm: ');
-console.log(`Ký tự cần tìm kiếm là: ${kiTu}`);
 
-let mangKiTu = chuoi.split('');
+// let mangKiTu = chuoi.split('');
 
-let tonTai = false;
+// let tonTai = false;
 
-for(let i = 0; i < mangKiTu.length; i++) {
-    if(kiTu == mangKiTu[i]) {
-        console.log(`${i}`);
-        tonTai = true;
-    }
-}
+// for(let i = 0; i < mangKiTu.length; i++) {
+//     if(kiTu == mangKiTu[i]) {
+//         console.log(`${i}`);
+//         tonTai = true;
+//     }
+// }
 
-if(tonTai == false) {
-    console.log('Không');
+// if(tonTai == false) {
+//     console.log('Không');
+// }
+
+//cach toi uu
+let result = chuoi.indexOf(kiTu);
+
+if(result == -1){
+    console.log('Không tồn tại ký tự này!');
+}else{
+    console.log(`Ký tự cần tìm kiếm là '${kiTu}' ở vị trí thứ ${result+1}`);
 }

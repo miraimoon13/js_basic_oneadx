@@ -7,17 +7,26 @@ console.log(`Chuỗi vừa nhập là: ${chuoi}`);
 let kiTu = prompt('Nhập vào ký tự muốn kiểm tra: ');
 console.log(`Ký tự muốn kiểm tra là: ${kiTu}`);
 
-let tonTai = false;
+// let tonTai = false;
 
-let mangKiTu = chuoi.split('');
+// let mangKiTu = chuoi.split('');
 
-for(let i = 0; i<mangKiTu.length; i++) {
-    if(kiTu == mangKiTu[i]) {
-        console.log(`Có`);
-        tonTai = true;
-    }
-}
+// for(let i = 0; i<mangKiTu.length; i++) {
+//     if(kiTu == mangKiTu[i]) {
+//         console.log(`Có`);
+//         tonTai = true;
+//     }
+// }
 
-if(tonTai == false) {
-    console.log(`Không`);
+// if(tonTai == false) {
+//     console.log(`Không`);
+// }
+
+//cach toi uu
+let result = chuoi.includes(kiTu);
+
+if(result){
+    console.log('Co');
+}else{
+    console.log('Khong')
 }

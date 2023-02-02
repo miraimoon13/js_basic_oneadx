@@ -2,20 +2,17 @@ console.log(`Viết chương trình cho phép nhập vào một số nguyên n (
 In ra tất cả số nguyên tố trong khoảng từ 0 - n.`);
 
 
-const isPrime = (n) => {
-    if (n <= 1) {
-        return false;
-    }
-    for (let i = 2; i <= Math.sqrt(n); i++) {
-        if (n % i == 0) {
-            return false;
+let ip = prompt('Nhap so nguyen < 1000');
+
+
+for(let i = 3; i<=ip ; i++) {
+    let snt = true;
+    for(let j = 2; j< i;i++) {
+        if(i%j == 0){
+            snt = false;
         }
     }
-    return true;
-}
-let ip = prompt('Nhập số nguyên dương: ');
-if (isPrime(ip)) {
-    console.log(`${ip} là số nguyên tố`);
-} else {
-    console.log(`${ip} không là số nguyên tố`)
+    if(snt){
+        console.log('Số nguyên tố là: ',i);
+    }
 }
